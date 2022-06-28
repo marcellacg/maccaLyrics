@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&family=Poppins:wght@300&family=Square+Peg&display=swap');
+
+* {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+#menu-h {
+    background-color: rgb(240, 225, 255);
+    box-shadow: 0px 0px 4px 0px rgb(0, 0, 0);
+}
+
+#menu-h ul{
+    max-width: 1200px;
+    list-style: none;
+    margin-bottom: 1%;
+
+}
+
+#menu-h ul li{
+    display: inline;
+    
+}
+
+#menu-h ul li a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    padding: 20px;
+    display: inline-block;
+    
+}
+
+#menu-h ul li a:hover{
+    background-color: rgb(196, 164, 255);
+    color: rgb(255, 255, 255);
+}
+
+#menu-h img{
+    float: left;
+    margin-left: 10px;
+    width: auto;
+    height: 55px;
+    margin-top: 5px;
+}
+
+#menu-h ul:last-child input{
+    width: 210px;
+    height: 32px;
+    float: right;
+    overflow: hidden;
+    border-style:solid;
+    border-radius: 10px;
+    margin-top: 15px;
+    margin-right: 10px;
+    text-align: center;
+}
+
+.collapsible {
+    background-color:rgb(240, 225, 255);
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    text-align: center;
+}
+
+#date-dropdown {
+    margin-left: 48%;
+    outline: none;
+}
+  
+.active, .collapsible:hover {
+    background-color: rgb(196, 164, 255);
+}
+  
+.content {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+
+}
+
+.collapsible:after {
+    content: '\02795'; /* Unicode character for "plus" sign (+) */
+    font-size: 13px;
+    color: white;
+    float: right;
+    margin-left: 5px;
+}
+  
+.active:after {
+    content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
+
+.content ul li a{
+    text-decoration: none;
+}
+
+.content ul li{
+    color: rgb(0, 0, 0);
+    list-style-type: none;
+    text-align: center;
+}
+
+p {
+    text-align: center;
+    font-size: 20px;
+    margin: 25px;
+}
+
+
+/* pode-se usar o * .classe #id e [atributo personalizado] 
+    :pseudo-classe ::pseudo-elemento
+    COMBINAÇÃO DE ELEMENTOS
+    
+    div + p -> irmãos adjacentes
+    
+    div ~ p -> irmãos em geral
+    
+    div > p -> filho direto
+    
+    div p -> descendente, qualquer elemento que seja descendente
+    
+    span:nth-child(1) -> qro o primeiro filho de alguém que é do
+    tipo span
+
+    section > :nth.clild(odd) -> filhos ímpares
+
+    ORDEM DE ESPECIFICIDADE
+    
+    1. Inline
+    2. ID
+    3. Classe, pseudo-classe, atributo
+    4. elemento, pseudo-elementos
+
+    ex: div { background-color: #black }
+        div:hover { background-color: #purple } *
+        div.estilo { background-color: #yellow } *
+        div[wm-color] { background-color: #green } *
+        
+        * as tres ultimas tem peso igual, mas pela ordem, quem
+        é executado é o último
+
+        #unico1 { background-color: #gray } passa por cima de todos
+
+        div é elemento block (e ja é display block)
+        span usa o display inline
+        ul usa display block
+        li usa display list-item
+        block significa o elemento será impresso na sua linha individual 
+
+        bordas e padding não são transmitidas por herança,
+        exceto se setar com inherit
+
+        span tem display diferente, tipo caixa
+
+    */
