@@ -8,7 +8,7 @@ function qntAnos() {
     let dateOption = document.createElement("option");          
     dateOption.text = currentYear;      
     dateOption.value = currentYear;        
-    dateDropdown.appendChild(dateDropdown);   
+    dateDropdown.appendChild(dateOption);   
     
     currentYear -= 1;
   }
