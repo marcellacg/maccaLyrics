@@ -68,6 +68,7 @@
     outline: none;
     font-size: 15px;
     text-align: center;
+    font-family: 'Poppins', sans-serif;
 }
 
 #date-dropdown {
@@ -116,6 +117,40 @@ p {
     margin: 25px;
 }
 
+.selector-for-some-widget {
+    box-sizing: content-box;
+  }
+
+.ui-datepicker-calendar {
+    display: none;
+}
+.content, .dropdown {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    width: 300px;
+    height: 100px;
+    position: top;
+    top: 1.5em;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    width: 300px;
+    height: 120px;
+    margin: auto;
+    box-shadow: 0px 0px 10px rgb(196, 164, 255);
+}
+
+.search-input {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 20px;
+    left: 0px;
+    width: 300px;
+    height: 100px;
+    margin: auto;
+    box-shadow: 0px 0px 10px  rgb(196, 164, 255); 
+}
 
 /* pode-se usar o * .classe #id e [atributo personalizado] 
     :pseudo-classe ::pseudo-elemento
