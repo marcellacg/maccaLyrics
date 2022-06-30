@@ -1,29 +1,27 @@
-// Importando o React
 import React from "react";
-// Importando os components necessários da lib react-materialize
-import { Row, Col, Card } from 'react-materialize';
+import { Collapsible, CollapsibleItem, Icon } from 'react-materialize';
+import Select from 'react-select';
+import '../../index';
+
+const options = [
+  { value: '1957', label: '1957' },
+  { value: 'strawberry', label: 'Strawberry' },
+  { value: 'vanilla', label: 'Vanilla' }
+]
 
 const Home = () => (
-  <Row>
-    <Col m={3} s={12}>
-      {/* <UserProfile /> */}
-    </Col>
-    <Col m={8} s={12}>
-        <h5 className="subtitle">About Me</h5>
-        <Card>
-          <div>
-            <p><b>Lorem</b></p>
-            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut laborevoluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
-            <br/>
-            <p><b>Ipsum</b></p>
-            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut laborevoluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
-          </div>
-        </Card>
-        <h5 className="subtitle">Experiences</h5>
-        {/* <Experience />
-        <Experience /> */}
-    </Col>
-  </Row>
+
+ <div>
+    <div><p>LETRAS POR ANO:</p></div>
+    <Collapsible accordion popout>
+    <CollapsibleItem expanded={false} header=" Selecione ano entre 1957 e 2022" 
+    icon={<Icon>expand_more</Icon>} node="div">
+      <Select  placeholder="Selecione um ano" options={options} />
+    </CollapsibleItem>
+  </Collapsible>
+
+</div>
+
 );
 
 export default Home;
