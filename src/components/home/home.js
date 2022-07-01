@@ -1,13 +1,7 @@
 import React from "react";
 import { Collapsible, CollapsibleItem, Icon } from 'react-materialize';
 import Select from 'react-select';
-import '../../index';
-
-const options = [
-  { value: '1957', label: '1957' },
-  { value: 'strawberry', label: 'Strawberry' },
-  { value: 'vanilla', label: 'Vanilla' }
-]
+import {options} from '../../utils/yearslist';
 
 const Home = () => (
 

@@ -11,12 +11,7 @@
 #mobile-nav {
     background-color: rgb(240, 225, 255);   
 }
-nav {
-    color: black;
-}
-nav ul a{
-    color: black;
-}
+
 .collapsible {
     background-color:rgb(240, 225, 255);
     color: rgb(0, 0, 0);
@@ -46,91 +41,20 @@ nav ul a{
     background-color: aliceblue;
 }
 
-.form-inline  {
-    width: 300px;
-    height: 50px;
-    color: black;
-    font-size: 12px;
+.container-footer {
+    position: relative;
+    min-height: 100%;
+    background: #fcfcfc;
 }
 
-
-#menu-h {
-    background-color: rgb(240, 225, 255);
-    box-shadow: 0px 0px 4px 0px rgb(0, 0, 0);
-}
-
-#menu-h ul{
-    max-width: 1200px;
-    list-style: none;
-    margin-bottom: 1%;
-
-}
-
-#menu-h ul li{
-    display: inline;
-    
-}
-
-#menu-h ul li a{
-    color: rgb(0, 0, 0);
-    text-decoration: none;
-    padding: 20px;
-    display: inline-block;
-    
-}
-
-#menu-h ul li a:hover{
-    background-color: rgb(196, 164, 255);
-    color: rgb(255, 255, 255);
-}
-
-#menu-h img{
-    float: left;
-    margin-left: 10px;
-    width: auto;
-    height: 55px;
-    margin-top: 5px;
-}
-
-#menu-h ul:last-child input{
-    width: 210px;
-    height: 32px;
-    float: right;
-    overflow: hidden;
-    border-style:solid;
-    border-radius: 10px;
-    margin-top: 15px;
-    margin-right: 10px;
-    text-align: center;
-}
-
-
-
-#date-dropdown {
-    margin-left: 48%;
-    outline: none;
-}
-  
-
-  
-.content {
-    padding: 0 18px;
-    background-color: white;
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.2s ease-out;
-
-}
-
-
-.content ul li a{
-    text-decoration: none;
-}
-
-.content ul li{
-    color: rgb(0, 0, 0);
-    list-style-type: none;
-    text-align: center;
+.footer {
+   background: rgb(240, 225, 255);   
+   color: black;
+   position:fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   text-align: center;
 }
 
 p {
@@ -138,32 +62,6 @@ p {
     font-size: 20px;
     margin: 25px;
 }
-
-.selector-for-some-widget {
-    box-sizing: content-box;
-  }
-
-.ui-datepicker-calendar {
-    display: none;
-}
-.content, .dropdown {
-    text-align: center;
-    font-family: 'Poppins', sans-serif;
-    width: 300px;
-    height: 100px;
-    position: top;
-    top: 1.5em;
-    right: 0px;
-    bottom: 0px;
-    left: 0px;
-    width: 300px;
-    height: 120px;
-    margin: auto;
-    box-shadow: 0px 0px 10px rgb(196, 164, 255);
-}
-
-
-   
 
 /* pode-se usar o * .classe #id e [atributo personalizado] 
     :pseudo-classe ::pseudo-elemento
