@@ -1,4 +1,5 @@
 # maccaLyrics
+Projeto de acesso a composições/letras do artista Paul McCartney
 
 ## Install node modules
 ### `npm install`
